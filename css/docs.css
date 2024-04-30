@@ -1,0 +1,168 @@
+@font-face {
+    font-family: SpaceGrotesk;
+    src: url("../fonts/SpaceGrotesk-Regular.ttf");
+}
+@font-face {
+    font-family: SpaceGrotesk;
+    src: url("../fonts/SpaceGrotesk-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Barlow;
+    src: url("../fonts/Barlow-Regular.ttf");
+}
+
+@font-face {
+    font-family: Barlow;
+    src: url("../fonts/Barlow-Bold.ttf");
+    font-weight: bold;
+}
+
+body{
+    font-family: SpaceGrotesk, serif;
+}
+
+.dk-nav {
+     background: rgba(75, 103, 249, 1) !important;
+}
+
+.dk-nav-icon > a {
+    border-right: 2px solid #ffffff;
+    padding-right: 10px;
+}
+
+.dk-nav-icon-items {
+    color: #ffffff;
+}
+
+.dk-pkg-name {
+    font-size: 24px;
+}
+
+.row_headline {
+    font-weight: bold;
+    font-size: 36px;
+    padding-top: 30px;
+    margin-bottom: 0;
+}
+
+.pkg_card {
+    border-radius: 20px;
+    border: 2px solid #000;
+    box-shadow: 10px 10px 0px 0px rgba(13, 95, 255, 0.3);
+}
+
+.pkg_card:hover {
+    border: 2px solid rgba(75, 103, 249, 1);
+    box-shadow: 10px 10px 0px 0px rgba(13, 95, 255, 1);
+
+}
+
+.pkg_card > .card-header {
+    background: none;
+    border-bottom: 1px solid #000;
+}
+
+.pkg_card > .card-header > a {
+    text-decoration: none;
+    color: #000;
+    font-family: Barlow, serif;
+}
+
+.pkg_card_body {
+    padding: 25px 20px;
+}
+
+.pkg_card_body > .card-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.pkg_card_body > .card-text {
+    font-size: 16px;
+    font-family: Barlow, serif;
+}
+
+.toc {
+    position: sticky;
+    top: 2rem;
+    font-family: Barlow, serif;
+}
+
+.toc__list {
+    list-style: none;
+}
+
+.toc__entry > a.active {
+    font-weight: bold;
+}
+
+/*---------- FOOTER -------------*/
+
+footer {
+    margin-top: 50px;
+    padding: 30px 0;
+    border: 2px solid rgba(228, 228, 228, 1)
+}
+
+.footer_head > p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.dk_widget {
+    font-family: Barlow, serif;
+    padding: 20px 10px;
+}
+
+.dk_widget > p {
+    font-weight: bold;
+    margin: 5px;
+    font-size: 18px;
+}
+
+.dk_widget > a > i {
+    color: rgba(75, 103, 249, 1);
+}
+
+.dk_widget > a {
+    color: rgba(175, 175, 175, 1);
+    text-decoration: none;
+    font-size: 15px;
+}
+.dk_widget > a:hover {
+    color: rgba(75, 103, 249, 1);
+    text-decoration: underline;
+}
+
+ul.support__list {
+    list-style: none;
+    margin: 0;
+}
+
+.support__list-item {
+    padding: 5px 0;
+}
+
+.support__list-item > a {
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+}
+.support__list-item > a > i {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.support__list-item > a:hover {
+    color: rgba(75, 103, 249, 1);
+    text-decoration: underline;
+}
+
+.footer_copy {
+    margin: 20px 0;
+}
+
+
+
