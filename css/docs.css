@@ -111,6 +111,10 @@ a:hover {
     color: #444;
 }
 
+.dropdown-item .active {
+
+}
+
 /*---------- FOOTER -------------*/
 
 footer {
