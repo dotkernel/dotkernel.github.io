@@ -45,6 +45,7 @@ a:hover {
 }
 
 .dk-pkg-name {
+    cursor: pointer;
     font-size: 24px;
 }
 
