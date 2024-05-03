@@ -213,7 +213,7 @@ ul.subnavigation__list {
 }
 
 .subnavigation__list-item {
-    border-bottom: 1px solid #e2e2e2;
+    /*border-bottom: 1px solid #e2e2e2;*/
 }
 
 .subnavigation__link, .subnavigation__headline {
@@ -244,7 +244,7 @@ li.subnavigation__list-item.subnavigation__list-item--active {
 
 .main_docs h1:first-of-type {
     font-size: 3rem;
-    border-bottom: 2px solid rgba(199, 31, 56, 1);
+    /*border-bottom: 2px solid rgba(199, 31, 56, 1);*/
     margin-bottom: 1.5rem;
     padding-bottom: 1rem;
     font-weight: bold;
