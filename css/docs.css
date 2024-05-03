@@ -590,7 +590,7 @@ i.bi.bi-copy.copy_btn {
 
 @media (max-width: 767.98px) {
     .right_sidebar {
-        display: none;
+        /*display: none;*/
     }
 
     .main_docs {
