@@ -103,6 +103,20 @@ a:hover {
     list-style: none;
 }
 
+.toc__headline {
+     font-size: 1.5rem;
+     padding-bottom: 2px;
+     margin: 0 1rem 1rem;
+ }
+
+.toc__entry {
+    font-size: 15px;
+    text-decoration: none;
+    color: #000000;
+    padding: .5rem 1rem;
+    display: block;
+}
+
 .toc__entry > a.active {
     font-weight: bold;
 }
