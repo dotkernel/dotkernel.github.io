@@ -251,7 +251,7 @@ li.subnavigation__list-item.subnavigation__list-item--active {
 }
 
 .main_docs h2 {
-    border-top: 1px solid rgba(199, 31, 56, 1);
+    /*border-top: 1px solid rgba(199, 31, 56, 1);*/
     padding-top: 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
