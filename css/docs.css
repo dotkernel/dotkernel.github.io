@@ -216,7 +216,7 @@ ul.subnavigation__list {
     border-bottom: 1px solid #e2e2e2;
 }
 
-.subnavigation__link {
+.subnavigation__link, .subnavigation__headline {
     font-size: 15px;
     text-decoration: none;
     color: #000000;
