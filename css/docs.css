@@ -277,8 +277,8 @@ blockquote {
     background-color: #f7f7f7;
     padding: 1.5rem 1rem;
     margin: 2rem 0;
-    border-left: 5px solid rgba(199, 31, 56, 1);
-    font-size: 0.95rem;
+    border-left: 5px solid #C71F38;
+    font-size: 15px;
 }
 
 /*CODE LANGUAGE */
