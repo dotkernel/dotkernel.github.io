@@ -32,6 +32,27 @@ a:hover {
     text-decoration: underline;
 }
 
+table {
+    background-color: #e6e6e6;
+    border-collapse: separate;
+    border-spacing: 1px;
+    font-family: SpaceGrotesk, serif;
+    width: 100%;
+}
+tr:nth-child(odd) td{
+    background-color: #ffffff;
+}
+tr:nth-child(even) td{
+    background-color: #f2f2f2;
+}
+th {
+    background-color: #eeeeee;
+    padding: 12px 8px;
+}
+td {
+    padding: 8px;
+}
+
 .dk-nav {
      background: rgba(75, 103, 249, 1) !important;
 }
