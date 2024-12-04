@@ -304,10 +304,11 @@ li.subnavigation__list-item.subnavigation__list-item--active {
 
 blockquote {
     background-color: #f7f7f7;
-    padding: 1.5rem 1rem;
+    padding: 12px 20px 0 20px;
     margin: 2rem 0;
-    border-left: 5px solid #C71F38;
+    border: 2px solid #d63384;
     font-size: 15px;
+    border-radius: 10px;
 }
 
 /*CODE LANGUAGE */
