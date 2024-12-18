@@ -344,6 +344,11 @@ pre code {
     word-break: normal;
 }
 
+code {
+    font-size: 1em !important;
+    font-weight: bold !important;
+}
+
 code[class*=language-],
 pre[class*=language-] {
     color: #f8f8f2;
