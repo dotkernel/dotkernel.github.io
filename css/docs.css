@@ -80,13 +80,12 @@ td {
 
 .pkg_card {
     border-radius: 20px;
-    border: 2px solid #000;
-    box-shadow: 10px 10px 0px 0px rgba(13, 95, 255, 0.3);
+    border: 2px solid #000000;
+    box-shadow: 10px 10px 20px 0 #0D5FFF40;
 }
 
 .pkg_card:hover {
-    border: 2px solid rgba(75, 103, 249, 1);
-    box-shadow: 10px 10px 0px 0px rgba(13, 95, 255, 1);
+    box-shadow: 13px 13px 20px 0 #FCFC4880;
 
 }
 
@@ -106,6 +105,7 @@ td {
 }
 
 .pkg_card_body > .card-title {
+    font-family: SpaceGrotesk, serif;
     font-size: 30px;
     font-weight: bold;
 }
@@ -156,7 +156,6 @@ td {
 footer {
     margin-top: 50px;
     padding: 30px 0;
-    border: 2px solid rgba(228, 228, 228, 1)
 }
 
 .footer_head > p {
@@ -192,6 +191,7 @@ footer {
 ul.support__list {
     list-style: none;
     margin: 0;
+    padding-left: 0 !important;
 }
 
 .support__list-item {
@@ -214,7 +214,9 @@ ul.support__list {
 }
 
 .footer_copy {
-    margin: 20px 0;
+    color: rgba(33, 37, 41, 0.62);
+    margin: 50px 0 20px 0;
+    text-align: center;
 }
 
 /*DOCUMENTATION*/
@@ -303,10 +305,10 @@ li.subnavigation__list-item.subnavigation__list-item--active {
 }
 
 blockquote {
-    background-color: #f7f7f7;
-    padding: 12px 20px 0 20px;
+    background-color: #ced6ff;
+    padding: 25px 30px 8px 30px;
     margin: 2rem 0;
-    border: 2px solid #d63384;
+    border: 2px solid #ced6ff;
     font-size: 15px;
     border-radius: 10px;
 }
@@ -345,6 +347,8 @@ pre code {
 }
 
 code {
+    color: #F60025;
+    font-family: SpaceGrotesk, serif;
     font-size: 1em !important;
     font-weight: bold !important;
 }
