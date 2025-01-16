@@ -84,11 +84,6 @@ td {
     box-shadow: 10px 10px 20px 0 #0D5FFF40;
 }
 
-.pkg_card:hover {
-    box-shadow: 13px 13px 20px 0 #FCFC4880;
-
-}
-
 .pkg_card > .card-header {
     background: none;
     border-bottom: 1px solid #000;
@@ -304,6 +299,10 @@ li.subnavigation__list-item.subnavigation__list-item--active {
     font-weight: bold;
 }
 
+h1 code, h2 code, h3 code, h4 code, h5 code {
+    background-color: unset;
+}
+
 blockquote {
     background-color: #ced6ff;
     padding: 25px 30px 8px 30px;
@@ -311,6 +310,11 @@ blockquote {
     border: 2px solid #ced6ff;
     font-size: 15px;
     border-radius: 10px;
+}
+
+blockquote code {
+    background-color: unset;
+    padding: unset;
 }
 
 /*CODE LANGUAGE */
@@ -341,16 +345,18 @@ pre.codehilite > code {
 }
 
 pre code {
-    font-size: inherit;
     color: inherit;
+    font-size: inherit;
     word-break: normal;
 }
 
 code {
+    background-color: #F2EFEF;
+    border-radius: 5px;
     color: #F60025;
     font-family: SpaceGrotesk, serif;
     font-size: 1em !important;
-    font-weight: bold !important;
+    padding: 0 5px;
 }
 
 code[class*=language-],
