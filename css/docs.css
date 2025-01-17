@@ -591,13 +591,7 @@ i.bi.bi-copy.copy_btn {
 }
 
 .page-nav {
-    list-style-type: none;
     border-top: 1px solid #d6d6d6;
-    display: table;
-    width: 100%;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-    padding: 50px 0 1rem;
 }
 
 .page-nav__item {
@@ -639,6 +633,10 @@ i.bi.bi-copy.copy_btn {
 /*RESPONSIVE*/
 
 @media (max-width: 767.98px) {
+    .page-nav li:nth-child(2) {
+        margin-top: 50px;
+    }
+
     .right_sidebar {
         /*display: none;*/
     }
