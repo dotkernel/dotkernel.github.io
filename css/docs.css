@@ -597,7 +597,7 @@ i.bi.bi-copy.copy_btn {
     width: 100%;
     margin-top: 3rem;
     margin-bottom: 1rem;
-    padding: 0 0 1rem;
+    padding: 50px 0 1rem;
 }
 
 .page-nav__item {
@@ -617,9 +617,13 @@ i.bi.bi-copy.copy_btn {
 }
 
 .page-nav__link {
-    border: none;
-    color: #444;
+    border: .12rem solid #4b67f9;
+    border-radius: 33px;
+    box-shadow: 5px 5px 20px 0 #ebf3fe;
+    color: #7681bf;
+    font-family: Barlow, serif;
     font-weight: bold;
+    padding: 1rem 2rem;
 }
 
 .page-nav__link--next .page-nav__label {
