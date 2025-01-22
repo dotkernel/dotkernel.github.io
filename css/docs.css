@@ -630,6 +630,16 @@ i.bi.bi-copy.copy_btn {
     font-weight: normal;
 }
 
+.alert-caution {
+    background-color: rgba(235, 130, 130, .37);
+    border-radius: 8px;
+    color: #141516;
+}
+
+.alert-caution a {
+    color: #1361DF;
+}
+
 /*RESPONSIVE*/
 
 @media (max-width: 767.98px) {
