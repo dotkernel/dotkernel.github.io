@@ -637,6 +637,7 @@ i.bi.bi-copy.copy_btn {
 }
 
 .alert-caution a {
+    border: none;
     color: #1361DF;
 }
 
