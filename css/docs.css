@@ -493,6 +493,16 @@ pre[data-line] {
     white-space: pre
 }
 
+.card-image {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    object-fit: contain;
+}
+
 @media print {
     .line-highlight {
         -webkit-print-color-adjust: exact;
