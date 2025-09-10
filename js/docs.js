@@ -13,3 +13,9 @@ function copy(text){
         } catch (error){}
     }
 }
+
+$(function() {
+    $('pre.highlight').each(function() {
+        $(this).prepend('<i class="bi bi-copy copy_btn" title="Copy code" onclick="copy(this)"></i>');
+    });
+});
