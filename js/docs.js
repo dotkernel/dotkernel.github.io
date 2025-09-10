@@ -14,8 +14,12 @@ function copy(text){
     }
 }
 
-$(function() {
-    $('pre.highlight').each(function() {
-        $(this).prepend('<i class="bi bi-copy copy_btn" title="Copy code" onclick="copy(this)"></i>');
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("pre.highlight").forEach(function (element) {
+        let icon = document.createElement("i");
+        icon.className = "bi bi-copy copy_btn";
+        icon.title = "Copy code";
+        icon.setAttribute("onclick", "copy(this)");
+        element.prepend(icon);
     });
 });
