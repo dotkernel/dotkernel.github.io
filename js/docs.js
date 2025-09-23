@@ -22,4 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
         icon.setAttribute("onclick", "copy(this)");
         element.prepend(icon);
     });
+
+    document.getElementById("current-year").textContent = new Date().getFullYear().toString();
 });
