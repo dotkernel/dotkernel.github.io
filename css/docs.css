@@ -651,6 +651,94 @@ i.bi.bi-copy.copy_btn {
     color: #1361DF;
 }
 
+.md-actions-bar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: .75rem;
+}
+.md-actions {
+    position: relative;
+}
+.md-actions-toggle,
+.md-actions-item {
+    font: inherit;
+    font-size: 13px;
+    color: #3c4257;
+    background: #ffffff;
+    cursor: pointer;
+}
+.md-actions-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .35rem .5rem .35rem .65rem;
+    border: 1px solid #d8dbe3;
+    border-radius: 6px;
+}
+.md-actions-toggle:hover,
+.md-actions-toggle[aria-expanded="true"] {
+    border-color: rgba(75, 103, 249, 1);
+    color: rgba(75, 103, 249, 1);
+}
+.md-actions-toggle-label {
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+}
+.md-actions-toggle-chev {
+    display: inline-flex;
+    padding-left: .4rem;
+    border-left: 1px solid #e3e5ec;
+}
+.md-actions .chev {
+    transition: transform .15s ease-in-out;
+}
+.md-actions-toggle[aria-expanded="true"] .chev {
+    transform: rotate(180deg);
+}
+.md-actions-menu {
+    position: absolute;
+    top: calc(100% + 4px);
+    right: 0;
+    z-index: 1020;
+    display: none;
+    min-width: 235px;
+    padding: .25rem;
+    background: #ffffff;
+    border: 1px solid #e3e5ec;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(16, 24, 40, .12);
+}
+.md-actions-menu.show {
+    display: block;
+}
+.md-actions-item {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    width: 100%;
+    padding: .45rem .55rem;
+    border: 0;
+    border-radius: 6px;
+    background: transparent;
+    text-align: left;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.md-actions-item:hover {
+    color: rgba(75, 103, 249, 1);
+    background: #f2f4fb;
+    text-decoration: none;
+}
+.md-actions-toggle svg,
+.md-actions-item svg {
+    flex: none;
+    width: 16px;
+    height: 16px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
 /*RESPONSIVE*/
 
 @media (max-width: 767.98px) {
