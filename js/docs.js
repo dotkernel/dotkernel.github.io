@@ -61,8 +61,8 @@ function copyMarkdownPage(button) {
             }
             return response.text();
         })
-        .then(function (markdown) {
-            return navigator.clipboard.writeText(markdown);
+        .then(async function (markdown) {
+            return await navigator.clipboard.writeText(markdown);
         })
         .then(function () {
             restore('Copied!');
