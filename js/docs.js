@@ -1,5 +1,5 @@
 function copy(text){
-    const parent = text.parentElement
+    const parent = text.closest('.code-block') || text.parentElement;
     const code = parent.querySelector('code');
     const range = document.createRange();
     range.selectNode(code);
@@ -14,13 +14,50 @@ function copy(text){
     }
 }
 
+function wrapCodeBlock(pre) {
+    var code = pre.querySelector('code');
+    var lang = '';
+    if (code) {
+        var match = code.className.match(/language-(\S+)/);
+        if (match) {
+            lang = match[1];
+        }
+    }
+
+    var wrapper = document.createElement('div');
+    wrapper.className = 'code-block';
+    pre.parentNode.insertBefore(wrapper, pre);
+    wrapper.appendChild(pre);
+
+    var header = document.createElement('div');
+    header.className = 'code-block__header';
+
+    var label = document.createElement('span');
+    label.className = 'code-block__lang';
+    label.textContent = lang || 'text';
+    header.appendChild(label);
+
+    var button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'code-block__copy';
+    button.textContent = 'Copy';
+    button.setAttribute('title', 'Copy code');
+    button.addEventListener('click', function () {
+        copy(button);
+        var original = button.textContent;
+        button.textContent = 'Copied!';
+        window.setTimeout(function () {
+            button.textContent = original;
+        }, 2000);
+    });
+    header.appendChild(button);
+
+    wrapper.insertBefore(header, pre);
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll("pre.highlight").forEach(function (element) {
-        let icon = document.createElement("i");
-        icon.className = "bi bi-copy copy_btn";
-        icon.title = "Copy code";
-        icon.setAttribute("onclick", "copy(this)");
-        element.prepend(icon);
+        wrapCodeBlock(element);
     });
 
     document.getElementById("current-year").textContent = new Date().getFullYear().toString();
