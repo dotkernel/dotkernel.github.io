@@ -1456,7 +1456,7 @@ ul.support__list {
    dk_widget project blurbs), so it gets its own markup/classes rather
    than reusing .footer/.dk_widget. */
 .dk-home-footer {
-    background: var(--dk-ink);
+    background: var(--dk-header);
     padding: 36px 40px 0;
     margin-top: 40px;
     color: rgba(255, 255, 255, .78);
