@@ -4,10 +4,23 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dotkernel documentation">
-    <title>Dotkernel documentation</title>
+    <title>Dotkernel Documentation</title>
+    <meta name="description" content="Official Dotkernel documentation covering APIs, Admin, Queue, developer tools, packages, and modern PHP application development">
     <link rel="canonical" href="https://docs.dotkernel.org/">
     <link rel="shortcut icon" href="https://docs.dotkernel.org/img/dk_docs_favicon_white.svg" />
+
+    <meta property="og:title"        content="Dotkernel Documentation"/>
+    <meta property="og:description"  content="Official Dotkernel documentation covering APIs, Admin, Queue, developer tools, packages, and modern PHP application development"/>
+    <meta property="og:image"        content="https://docs.dotkernel.org/img/open-graph/twitter-card-docs.png"/>
+    <meta property="og:type"         content="website"/>
+    <meta property="og:site_name"    content="Dotkernel Documentation"/>
+    <meta property="og:url"          content="https://docs.dotkernel.org/"/>
+    <meta property="og:locale"       content="en_US"/>
+    <meta name="twitter:card"        content="summary_large_image"/>
+    <meta name="twitter:site"        content="@dotkernel"/>
+    <meta name="twitter:title"       content="Dotkernel Documentation"/>
+    <meta name="twitter:description" content="Official Dotkernel documentation covering APIs, Admin, Queue, developer tools, packages, and modern PHP application development"/>
+    <meta name="twitter:image"       content="https://docs.dotkernel.org/img/open-graph/twitter-card-docs.png"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,8 +37,8 @@
     <nav class="navbar navbar-expand-lg dk-docs-nav py-2" data-bs-theme="dark">
         <div class="container-fluid dk-docs-nav__inner">
             <a class="navbar-brand dk-docs-nav__brand" href="https://docs.dotkernel.org/">
-                <img alt="Dotkernel" class="d-inline-block align-text-top" height="24"
-                     src="https://docs.dotkernel.org/img/dk_logo_2024_white.svg" width="129"/>
+                <img alt="Dotkernel Logo" class="d-inline-block align-text-top" height="28"
+                     src="https://docs.dotkernel.org/img/dk_logo_2024_white.svg" width="152"/>
             </a>
 
             <ul class="dk-docs-nav__projects list-unstyled d-none d-lg-flex align-items-center mb-0">
@@ -95,14 +108,14 @@
 
                 <div class="dk-home-sidebar__group">Packages</div>
                 <a href="https://docs.dotkernel.org/packages/">All packages</a>
-                <a href="https://docs.dotkernel.org/packages/#lifecycle">Packages Lifecycle</a>
+                <a href="https://www.dotkernel.com/dotkernel-packages-oss-lifecycle/">Packages Lifecycle</a>
             </nav>
         </div>
 
         <div class="dk-home-main">
             <div class="dk-home-eyebrow">PSR-15 &middot; middleware-first architecture</div>
             <h1>A headless platform for building modern web applications</h1>
-            <p class="dk-home-lede">Dotkernel is a set of open-source PHP applications &mdash; REST API, admin, and queue &mdash; that ship assembled on Mezzio and Laminas, over one shared Doctrine domain layer called Core. OAuth2, RBAC, HAL, and a generated OpenAPI spec are wired together on install, not left for you to choose.</p>
+            <p class="dk-home-lede">Dotkernel is a set of open-source PHP applications - REST API, admin, and queue - that ship assembled on Mezzio and Laminas, over one shared Doctrine domain layer called Core. OAuth2, RBAC, HAL, and a generated OpenAPI spec are wired together on install, not left for you to choose.</p>
 
             <div class="dk-home-stats">
                 <div class="dk-home-stats__item">
@@ -120,30 +133,30 @@
             </div>
 
             <h2>Headless Platform</h2>
-            <p>API, Admin, and Queue declare the same <code>Core</code> namespaces &mdash; the same entities, repositories, and services. Three deployables that scale independently and never disagree about the domain.</p>
+            <p>API, Admin, and Queue declare the same <code>Core</code> namespaces - the same entities, repositories, and services. Three deployables that scale independently and never disagree about the domain.</p>
             <div class="dk-home-cards">
                 <a href="https://docs.dotkernel.org/api-documentation/" class="dk-home-card dk-home-card--featured">
                     <div class="dk-home-card__meta">Deployable &middot; Shares Core</div>
                     <div class="dk-home-card__title">API</div>
                     <div class="dk-home-card__tagline">The HTTP surface of your platform, ready for any client.</div>
-                    <div class="dk-home-card__desc">REST APIs on a readable PSR-15 middleware pipeline &mdash; no kernel, no facades, no runtime magic. OAuth2, RBAC, and OpenAPI included.</div>
+                    <div class="dk-home-card__desc">REST APIs on a readable PSR-15 middleware pipeline - no kernel, no facades, no runtime magic. OAuth2, RBAC, and OpenAPI included.</div>
                 </a>
                 <a href="https://docs.dotkernel.org/admin-documentation/" class="dk-home-card">
                     <div class="dk-home-card__meta">Deployable &middot; Shares Core</div>
                     <div class="dk-home-card__title">Admin</div>
                     <div class="dk-home-card__tagline">A back office for complete control over the same data your API serves.</div>
-                    <div class="dk-home-card__desc">A ready-to-go admin skeleton &mdash; table-based CRUD screens for your records, plus the pieces for reports and dashboards.</div>
+                    <div class="dk-home-card__desc">A ready-to-go admin skeleton - table-based CRUD screens for your records, plus the pieces for reports and dashboards.</div>
                 </a>
                 <a href="https://docs.dotkernel.org/queue-documentation/" class="dk-home-card">
                     <div class="dk-home-card__meta">Deployable &middot; Shares Core</div>
                     <div class="dk-home-card__title">Queue</div>
                     <div class="dk-home-card__tagline">Work your users should not wait for, moved off the request.</div>
-                    <div class="dk-home-card__desc">Background job processing for the platform &mdash; dispatch work from API or Admin and run it in a separate worker. Built on Symfony Messenger.</div>
+                    <div class="dk-home-card__desc">Background job processing for the platform - dispatch work from API or Admin and run it in a separate worker. Built on Symfony Messenger.</div>
                 </a>
             </div>
 
             <h2>Developer tooling</h2>
-            <p>A production-like environment on your machine, and the context your AI tools need to write Dotkernel code &mdash; both ready before anything reaches your users.</p>
+            <p>A production-like environment on your machine, and the context your AI tools need to write Dotkernel code - both ready before anything reaches your users.</p>
             <div class="dk-home-cards">
                 <a href="https://docs.dotkernel.org/development/" class="dk-home-card">
                     <div class="dk-home-card__meta">Tooling &middot; Local environment</div>
@@ -155,7 +168,7 @@
                     <div class="dk-home-card__meta">Tooling &middot; AI context</div>
                     <div class="dk-home-card__title">Dotboost</div>
                     <div class="dk-home-card__tagline">Faster AI-assisted development, grounded in Dotkernel's own standards.</div>
-                    <div class="dk-home-card__desc">Dotkernel context for AI coding tools &mdash; current standards, architectural patterns, and framework idioms, so generated code matches the ecosystem instead of guessing at it.</div>
+                    <div class="dk-home-card__desc">Dotkernel context for AI coding tools - current standards, architectural patterns, and framework idioms, so generated code matches the ecosystem instead of guessing at it.</div>
                 </a>
             </div>
 
@@ -166,18 +179,18 @@
                     <div class="dk-home-card__meta">Skeleton &middot; Minimal</div>
                     <div class="dk-home-card__title">Light</div>
                     <div class="dk-home-card__tagline">A small site or service without a platform around it.</div>
-                    <div class="dk-home-card__desc">The smallest complete Mezzio application &mdash; PSR-15 pipeline, routing, and templating, nothing to strip out. A real starting point for a simple site.</div>
+                    <div class="dk-home-card__desc">The smallest complete Mezzio application - PSR-15 pipeline, routing, and templating, nothing to strip out. A real starting point for a simple site.</div>
                 </a>
                 <a href="https://docs.dotkernel.org/frontend-documentation/" class="dk-home-card">
                     <div class="dk-home-card__meta">Skeleton &middot; Standalone</div>
                     <div class="dk-home-card__title">Frontend</div>
                     <div class="dk-home-card__tagline">A server-rendered web application you can build on.</div>
-                    <div class="dk-home-card__desc">A web starter skeleton for full-stack applications on Mezzio and Laminas &mdash; server-rendered Twig views, forms, sessions, and RBAC-guarded routes.</div>
+                    <div class="dk-home-card__desc">A web starter skeleton for full-stack applications on Mezzio and Laminas - server-rendered Twig views, forms, sessions, and RBAC-guarded routes.</div>
                 </a>
             </div>
 
             <h2>Packages</h2>
-            <p>Small, independent dot-* packages &mdash; pull in what you need. Lifecycle status for each lives on the <a href="https://docs.dotkernel.org/packages/#lifecycle">Packages Lifecycle</a> page.</p>
+            <p>Small, independent dot-* packages - pull in what you need. Lifecycle status for each lives on the <a href="https://docs.dotkernel.org/packages/#lifecycle">Packages Lifecycle</a> page.</p>
             <div class="dk-home-pkg-groups">
                 <div class="dk-home-pkg-group">
                     <div class="dk-home-pkg-group__title">Authentication</div>
@@ -256,15 +269,13 @@
                 <a href="https://docs.dotkernel.org/api-documentation/">API</a>
                 <a href="https://docs.dotkernel.org/admin-documentation/">Admin</a>
                 <a href="https://docs.dotkernel.org/queue-documentation/">Queue</a>
-                <a href="https://docs.dotkernel.org/dotboost/">Dotboost</a>
                 <a href="https://docs.dotkernel.org/light-documentation/">Light</a>
-                <a href="https://docs.dotkernel.org/frontend-documentation/">Frontend</a>
             </div>
             <div class="dk-home-footer__col">
                 <div class="dk-home-footer__label">Resources</div>
+                <a href="https://docs.dotkernel.org/dotboost/">Dotboost</a>
                 <a href="https://docs.dotkernel.org/headless-documentation/">Architecture</a>
-                <a href="https://docs.dotkernel.org/">Documentation</a>
-                <a href="https://docs.dotkernel.org/packages/#lifecycle">Packages Lifecycle</a>
+                <a href="https://www.dotkernel.com/dotkernel-packages-oss-lifecycle/">Packages Lifecycle</a>
                 <a href="https://docs.dotkernel.org/development/">WSL2 Dev Stack</a>
             </div>
             <div class="dk-home-footer__col">
@@ -272,20 +283,20 @@
                 <a href="https://www.dotkernel.com/">Categories</a>
                 <a href="https://www.dotkernel.com/blog/">Blog</a>
                 <a href="https://github.com/orgs/dotkernel/discussions">Discussion</a>
-                <a href="https://www.dotkernel.com/">About</a>
-                <a href="https://www.dotkernel.com/">Contact us</a>
+                <a href="https://www.dotkernel.com/about/">About</a>
+                <a href="https://www.dotkernel.com/contact/">Contact us</a>
             </div>
             <div class="dk-home-footer__col">
                 <div class="dk-home-footer__label">Follow</div>
                 <a href="https://github.com/dotkernel" target="_blank">GitHub</a>
-                <a href="https://www.dotkernel.com/feed/" target="_blank">RSS Feed</a>
+                <a href="https://www.dotkernel.com/feed/" target="_blank">Dotkernel RSS Feed</a>
                 <div class="dk-home-footer__note">Open-source tooling supported by JetBrains.</div>
             </div>
         </div>
 
         <div class="dk-home-footer__bottom">
             <img src="https://docs.dotkernel.org/img/dk_logo_2024_white.svg" alt="Dotkernel" width="112" height="21" style="opacity:.75" />
-            <div class="dk-home-footer__tagline">Built with Mezzio, Laminas &amp; Doctrine &mdash; for PHP developers, by PHP developers. The Laminas logo is copyright of the Laminas Foundation.</div>
+            <div class="dk-home-footer__tagline">Built with Mezzio, Laminas &amp; Doctrine - for PHP developers, by PHP developers. The Laminas logo is copyright of the Laminas Foundation.</div>
             <div class="flex-grow-1"></div>
             <div class="dk-home-footer__copyright">&#169; Copyright Dotkernel <span id="current-year"></span>. All rights reserved.</div>
         </div>

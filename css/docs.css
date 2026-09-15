@@ -36,7 +36,7 @@
     --dk-blue: #1d5db8;
     --dk-blue-dark: #16406f;
     --dk-blue-light: #7fb0f0;
-    --dk-header: #12395E;
+    --dk-header: #1d5db8;
     --dk-tint: #eaf1fb;
     --dk-tint-2: #f6f9fd;
     --dk-panel: #f7f9fc;
@@ -301,7 +301,7 @@ nav.nav_breadcrumb {
 
 .nav_breadcrumb .breadcrumb {
     font-family: var(--dk-font-mono);
-    font-size: 11px;
+    font-size: 10px;
     letter-spacing: .04em;
     text-transform: uppercase;
     color: var(--dk-muted-2);
@@ -565,11 +565,12 @@ pre code {
 }
 
 code {
-    background-color: #F2EFEF;
-    border-radius: 5px;
-    color: #F60025;
-    font-family: SpaceGrotesk, serif;
-    font-size: 1em !important;
+    background-color: #F1F4F8;
+    border: 1px solid #DFE5EC;
+    border-radius: 3px;
+    color: #242B33;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 13.5px;
     padding: 0 5px;
 }
 
