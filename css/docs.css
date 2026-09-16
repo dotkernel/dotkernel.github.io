@@ -1419,6 +1419,12 @@ ul.support__list {
     color: var(--dk-muted-3);
 }
 
+.dk-home-pkg-note {
+    font-size: 13px;
+    color: var(--dk-muted-3);
+    margin-top: 10px;
+}
+
 .dk-home-info-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
