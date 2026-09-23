@@ -19,6 +19,27 @@
     font-weight: bold;
 }
 
+@font-face {
+    font-family: Archivo;
+    src: url("../fonts/Archivo-VariableFont_wdth,wght.ttf");
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Source Sans 3";
+    src: url("../fonts/SourceSans3-VariableFont_wght.ttf");
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("../fonts/JetBrainsMono-VariableFont_wght.ttf");
+    font-weight: 100 800;
+    font-style: normal;
+}
+
 /* ---------------------------------------------------------------------
    1A "Dense reference" design tokens.
    Scoped to the mkdocs-templated documentation chrome (.docs-shell,
@@ -1372,6 +1393,16 @@ ul.support__list {
     line-height: 1.5;
     color: #3a444f;
     margin-top: 7px;
+}
+
+.dk-home-card__logo {
+    width: 100px;
+    height: 100px;
+    background: #E1E1E1;
+    padding: 8px;
+    border-radius: 8px;
+    object-fit: contain;
+    object-position: center;
 }
 
 .dk-home-pkg-groups {
