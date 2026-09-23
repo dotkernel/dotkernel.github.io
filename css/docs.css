@@ -1395,6 +1395,16 @@ ul.support__list {
     margin-top: 7px;
 }
 
+.dk-home-card__logo {
+    width: 100px;
+    height: 100px;
+    background: #E1E1E1;
+    padding: 8px;
+    border-radius: 8px;
+    object-fit: contain;
+    object-position: center;
+}
+
 .dk-home-pkg-groups {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
