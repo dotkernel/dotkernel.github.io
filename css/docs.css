@@ -1168,6 +1168,13 @@ ul.support__list {
 
 /*RESPONSIVE*/
 
+@media (max-width: 991.98px) {
+    .right_sidebar {
+        border-right: none;
+        border-bottom: 1px solid var(--dk-border);
+    }
+}
+
 @media (max-width: 767.98px) {
     .page-nav li:nth-child(2) {
         margin-top: 50px;
@@ -1177,19 +1184,7 @@ ul.support__list {
         border: none;
         padding: 20px 20px 40px;
     }
-
-    .right_sidebar {
-        border-right: none;
-        border-bottom: 1px solid var(--dk-border);
-    }
 }
-
-/* ---------------------------------------------------------------------
-   Root homepage (dotkernel.github.io/index.html) — "Index" mock.
-   This is a hand-authored static file, not part of the mkdocs theme,
-   so these classes are namespaced .dk-home-* and only ever used there.
-   Reuses the .dk-docs-nav masthead and the shared :root tokens above.
-   --------------------------------------------------------------------- */
 
 .dk-home-shell {
     display: grid;
@@ -1259,7 +1254,6 @@ ul.support__list {
 .dk-home-main {
     padding: 26px 40px 0;
     min-width: 0;
-    max-width: 1000px;
     font-family: var(--dk-font-body);
     color: var(--dk-text);
 }
@@ -1275,11 +1269,11 @@ ul.support__list {
 .dk-home-main h1 {
     font-family: var(--dk-font-display);
     font-weight: 700;
-    font-size: 34px;
-    line-height: 1.1;
-    letter-spacing: -.022em;
+    font-size: 32px;
+    line-height: 1.12;
+    letter-spacing: -.02em;
     color: var(--dk-ink);
-    margin: 9px 0 0;
+    margin: 9px 0 1rem;
 }
 
 .dk-home-lede {
@@ -1579,7 +1573,6 @@ ul.support__list {
 
     .dk-home-main {
         padding: 20px 20px 0;
-        max-width: none;
     }
 
     .dk-home-footer {

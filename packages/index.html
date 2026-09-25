@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="https://docs.dotkernel.org/css/docs.css" />
     <script src="https://docs.dotkernel.org/js/bootstrap.js" defer></script>
     <script src="https://docs.dotkernel.org/js/docs.js" defer></script>
+    <script src="https://docs.dotkernel.org/js/scripts.js" defer></script>
 </head>
 
 <body>
@@ -52,11 +53,11 @@
 
             <div class="flex-grow-1"></div>
 
-            <span class="dk-docs-nav__search d-none d-md-flex align-items-center">
+            <a href="#" class="dk-docs-nav__search d-none d-md-flex align-items-center" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal" title="Open search">
                 <i class="bi bi-search"></i>
                 <span>Search docs</span>
                 <span class="dk-docs-nav__search-key">/</span>
-            </span>
+            </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -223,5 +224,24 @@
             <div class="dk-home-footer__copyright">&#169; Copyright Dotkernel <span id="current-year"></span>. All rights reserved.</div>
         </div>
     </footer>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Search</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search packages" id="mkdocs-search-query">
+                        </div>
+                    </form>
+                    <div id="mkdocs-search-results"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
