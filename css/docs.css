@@ -551,6 +551,16 @@ blockquote code {
     padding: 1px 0;
 }
 
+/* Inline code, GitHub style */
+.main_docs :not(pre) > code {
+    background-color: #818b981f;
+    border-radius: 6px;
+    color: var(--dk-blue-dark);
+    font-size: 85% !important;
+    padding: .2em .4em;
+    white-space: break-spaces;
+}
+
 /* ---------------- CODE BLOCKS ---------------- */
 
 #configuration ~ pre.codehilite {
