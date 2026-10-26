@@ -556,7 +556,7 @@ blockquote code {
     background-color: #818b981f;
     border-radius: 6px;
     color: var(--dk-blue-dark);
-    font-size: 85% !important;
+    font-size: 80% !important;
     padding: .2em .4em;
     white-space: break-spaces;
 }
