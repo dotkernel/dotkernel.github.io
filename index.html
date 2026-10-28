@@ -203,47 +203,46 @@
             <p>Small, independent dot-* packages - pull in what you need. Lifecycle status for each lives on the <a href="https://www.dotkernel.com/dotkernel-packages-oss-lifecycle/">Packages Lifecycle</a> page.</p>
             <div class="dk-home-pkg-groups">
                 <div class="dk-home-pkg-group">
-                    <div class="dk-home-pkg-group__title">Authentication</div>
-                    <div class="dk-home-pkg-list">
-                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-authentication">dot-authentication</a><span class="dk-home-pkg__desc">core authentication interfaces</span></div>
-                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-auth-social">dot-auth-social</a><span class="dk-home-pkg__desc">Facebook auth via oauth2-client</span></div>
+                    <div class="dk-home-pkg-group__title">Application</div>
+                    <div class="dk-home-pkg-list dk-home-pkg-list--bulleted">
+                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-data-fixtures">dot-data-fixtures</a><span class="dk-home-pkg__desc">CLI interface for interacting with doctrine/data-fixtures</span></div>
+                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-controller">dot-controller</a><span class="dk-home-pkg__desc">controllers usable like middleware inside Dotkernel or Mezzio</span></div>
+                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-flashmessenger">dot-flashmessenger</a><span class="dk-home-pkg__desc">flash messenger library for session messages between redirects</span></div>
+                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-navigation">dot-navigation</a><span class="dk-home-pkg__desc">configurable navigation elements, configuration-based approach</span></div>
+                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-response-header">dot-response-header</a><span class="dk-home-pkg__desc">middleware for setting and overwriting custom response headers</span></div>
+                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-twigrenderer">dot-twigrenderer</a><span class="dk-home-pkg__desc">Twig extensions and customizations</span></div>
                     </div>
                 </div>
                 <div class="dk-home-pkg-group">
-                    <div class="dk-home-pkg-group__title">Authorization</div>
-                    <div class="dk-home-pkg-list">
-                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-authorization">dot-authorization</a><span class="dk-home-pkg__desc">core authorization interfaces</span></div>
-                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-rbac">dot-rbac</a><span class="dk-home-pkg__desc">RBAC implementation</span></div>
-                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-rbac-guard">dot-rbac-guard</a><span class="dk-home-pkg__desc">RBAC for authorizing app sections</span></div>
-                    </div>
-                </div>
-                <div class="dk-home-pkg-group">
-                    <div class="dk-home-pkg-group__title">Logging &amp; error handling</div>
-                    <div class="dk-home-pkg-list">
-                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-log">dot-log</a><span class="dk-home-pkg__desc">structured application logging</span></div>
-                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-errorhandler">dot-errorhandler</a><span class="dk-home-pkg__desc">centralized error handling</span></div>
-                    </div>
-                </div>
-                <div class="dk-home-pkg-group">
-                    <div class="dk-home-pkg-group__title">Session</div>
-                    <div class="dk-home-pkg-list">
-                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-session">dot-session</a><span class="dk-home-pkg__desc">extends laminas-session</span></div>
-                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-flashmessenger">dot-flashmessenger</a><span class="dk-home-pkg__desc">short-lived session messages</span></div>
-                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-cache">dot-cache</a><span class="dk-home-pkg__desc">extends symfony/cache</span></div>
-                    </div>
-                </div>
-                <div class="dk-home-pkg-group">
-                    <div class="dk-home-pkg-group__title">Database</div>
-                    <div class="dk-home-pkg-list">
-                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-data-fixtures">dot-data-fixtures</a><span class="dk-home-pkg__desc">extends doctrine/data-fixtures</span></div>
+                    <div class="dk-home-pkg-group__title">Security</div>
+                    <div class="dk-home-pkg-list dk-home-pkg-list--bulleted">
+                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-auth-social">dot-auth-social</a><span class="dk-home-pkg__desc">authenticate users through social networks, return credentials + user details</span></div>
+                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-authentication">dot-authentication</a><span class="dk-home-pkg__desc">base package defining authentication service interfaces</span></div>
+                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-authorization">dot-authorization</a><span class="dk-home-pkg__desc">base package defining authorization service interfaces</span></div>
+                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-rbac">dot-rbac</a><span class="dk-home-pkg__desc">RBAC authorization implementation</span></div>
+                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-rbac-guard">dot-rbac-guard</a><span class="dk-home-pkg__desc">RBAC handler/controller guard for authorizing app sections</span></div>
+                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-rbac-route-guard">dot-rbac-route-guard</a><span class="dk-home-pkg__desc">RBAC handler guard for authorizing app sections</span></div>
+                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-session">dot-session</a><span class="dk-home-pkg__desc">extends and customizes laminas/laminas-session</span></div>
+                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-totp">dot-totp</a><span class="dk-home-pkg__desc">Time-Based One-Time Password (TOTP) authorization component</span></div>
                     </div>
                 </div>
                 <div class="dk-home-pkg-group">
                     <div class="dk-home-pkg-group__title">Tools</div>
-                    <div class="dk-home-pkg-list">
-                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-cli">dot-cli</a><span class="dk-home-pkg__desc">extends laminas-cli</span></div>
-                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-event">dot-event</a><span class="dk-home-pkg__desc">extends laminas-eventmanager</span></div>
-                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-helpers">dot-helpers</a><span class="dk-home-pkg__desc">shared utility helpers</span></div>
+                    <div class="dk-home-pkg-list dk-home-pkg-list--bulleted">
+                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-annotated-services">dot-annotated-services</a><span class="dk-home-pkg__desc">annotation-based dependency injection</span></div>
+                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-dependency-injection">dot-dependency-injection</a><span class="dk-home-pkg__desc">attribute-based dependency injection</span></div>
+                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-cache">dot-cache</a><span class="dk-home-pkg__desc">cache component based on symfony/cache</span></div>
+                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-cli">dot-cli</a><span class="dk-home-pkg__desc">build console applications based on laminas/laminas-cli</span></div>
+                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-debugbar">dot-debugbar</a><span class="dk-home-pkg__desc">debug bar built on top of maximebf/php-debugbar</span></div>
+                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-errorhandler">dot-errorhandler</a><span class="dk-home-pkg__desc">error logging component</span></div>
+                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-event">dot-event</a><span class="dk-home-pkg__desc">extends and customizes laminas/laminas-eventmanager</span></div>
+                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-geoip">dot-geoip</a><span class="dk-home-pkg__desc">geographical details about an IP address</span></div>
+                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-helpers">dot-helpers</a><span class="dk-home-pkg__desc">helper structures and classes, based on mezzio/mezzio-helpers</span></div>
+                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-log">dot-log</a><span class="dk-home-pkg__desc">structured application logging</span></div>
+                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-mail">dot-mail</a><span class="dk-home-pkg__desc">mail component based on symfony/mailer</span></div>
+                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-maker">dot-maker</a><span class="dk-home-pkg__desc">generates Dotkernel project files and directories</span></div>
+                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-router">dot-router</a><span class="dk-home-pkg__desc">complex routing, based on mezzio/mezzio-fastroute</span></div>
+                        <div class="dk-home-pkg"><a class="dk-home-pkg__name" href="https://docs.dotkernel.org/dot-user-agent-sniffer">dot-user-agent-sniffer</a><span class="dk-home-pkg__desc">device details parsed from a user agent, based on matomo/device-detector</span></div>
                     </div>
                 </div>
             </div>
