@@ -1472,6 +1472,22 @@ ul.support__list {
     gap: 4px 10px;
 }
 
+.dk-home-pkg-list--bulleted .dk-home-pkg {
+    position: relative;
+    padding-left: 14px;
+}
+
+.dk-home-pkg-list--bulleted .dk-home-pkg::before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: .6em;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--dk-blue);
+}
+
 .dk-home-pkg__name {
     font-family: var(--dk-font-mono);
     font-size: 12.5px;
