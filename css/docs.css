@@ -398,6 +398,35 @@ span.subnavigation__headline {
     margin-top: 10px;
 }
 
+.subnavigation__list-item > a[data-bs-toggle="collapse"] {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.subnavigation__list-item > a[data-bs-toggle="collapse"]::after {
+    content: "\f285";
+    font-family: bootstrap-icons;
+    font-size: 10px;
+    margin-top: 10px;
+    color: var(--dk-muted-3);
+    transition: transform .15s ease;
+}
+
+.subnavigation__list-item > a[data-bs-toggle="collapse"][aria-expanded="true"]::after {
+    transform: rotate(90deg);
+}
+
+.subnavigation__list-item > a[data-bs-toggle="collapse"] .subnavigation__headline {
+    color: var(--dk-muted-3);
+}
+
+.subnavigation__list-item > a[data-bs-toggle="collapse"]:hover .subnavigation__headline,
+.subnavigation__list-item > a[data-bs-toggle="collapse"]:hover::after {
+    color: var(--dk-blue);
+}
+
 .subnavigation__link:hover {
     background-color: var(--dk-panel);
     color: var(--dk-blue-dark);
